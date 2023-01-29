@@ -32,6 +32,9 @@ img {
   background-color: #201a2e;
   position: fixed;
   opacity: 0.98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #nav {
@@ -40,6 +43,8 @@ img {
   align-items: center;
   align-content: center;
   margin: 10px;
+  max-width: 1200px;
+  gap: 200px;
 }
 
 #menu img {
@@ -65,12 +70,17 @@ img {
   height: 800px;
   background-image: url(/img/fundo-dead-cells.jpg);
   background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #title .title__content {
   display: flex;
+  align-content: center;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
 }
 
 #title .name_game {
@@ -137,7 +147,7 @@ img {
 #trailer {
   width: 100%;
   height: 800px;
-  background-image: url(/img/fundo-dead-cells.jpg);
+  background-image: url(/img/dead-cells-back2.jpg);
   background-repeat: repeat;
   object-fit: cover;
   display: flex;
@@ -195,7 +205,7 @@ img {
 
 #buy {
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-color: #070b18;
   color: aliceblue;
   display: flex;
@@ -216,6 +226,8 @@ img {
   display: flex;
   max-width: 1200px;
   margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #buy .buy__box {
@@ -236,13 +248,21 @@ img {
   height: 150px;
 }
 
-.footer__content{
-  width: 100%;
-  height: 200px;
-  background-color: #101524;
+#footer{
   display: flex;
-  justify-content: space-around;
+  background-color: #101524;
+  justify-content: center;
   align-items: center;
+  width: auto;
+}
+
+.footer__content{
+  max-width: 1200px;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
 }
 
 .footer__content p{
@@ -251,8 +271,16 @@ img {
   font-size: 1.4rem;
 }
 
+.footer__content a{
+  color: aliceblue;
+}
+
 .social__medias img{
   width: 40px;
   margin-right:10px ;
   color: aliceblue;
+}
+
+.oficial__site a{
+  color: #bcfbfd;
 }
