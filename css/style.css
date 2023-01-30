@@ -10,7 +10,9 @@
   text-decoration: none;
   list-style: none;
   font-family: Berylium;
+
 }
+
 
 h1 {
   font-size: 4rem;
@@ -20,21 +22,19 @@ img {
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-}
-.logo{
+.logo {
   width: 125px;
 }
 
 #menu {
   width: 100%;
   background-color: #201a2e;
-  position: fixed;
   opacity: 0.98;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 #nav {
@@ -62,7 +62,7 @@ img {
   color: white;
   font-size: 1.3rem;
   font-family: Berylium;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 #title {
@@ -84,16 +84,12 @@ img {
 }
 
 #title .name_game {
-  width: 800px;
-  margin-left: 80px;
-}
+  width: 60vw;
 
-#title img {
-  width: 98%;
 }
 
 #title .char_game {
-  width: 600px;
+  width: 40vw;
   height: 600px;
 }
 
@@ -155,9 +151,16 @@ img {
   align-items: center;
 }
 
+#trailer iframe {
+  max-width: 1200px;
+  width: 90%;
+  height: 600px;
+}
+
 #dlc {
   width: 100%;
-  height: 1300px;
+  height: auto;
+  padding-bottom: 100px;
   background-color: #101524;
   color: #bcfbfd;
   display: flex;
@@ -166,8 +169,8 @@ img {
   align-content: center;
 }
 
-.dlc__text{
-  margin:70px 0 50px 0 ;
+.dlc__text {
+  margin: 70px 0 50px 0;
 }
 
 .dlcs__item {
@@ -175,7 +178,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
-  height: 500px;
+  height: 60%;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -183,8 +186,10 @@ img {
 .dlcs__itens {
   box-shadow: 10px 5px 10px black;
   border-radius: 8px;
-  width: 500px;
-  height: 500px;
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 600px;
   padding: 10px;
   background-color: #16203b;
 }
@@ -205,7 +210,8 @@ img {
 
 #buy {
   width: 100%;
-  height: 800px;
+  height: auto;
+  padding: 50px 0 50px 0;
   background-color: #070b18;
   color: aliceblue;
   display: flex;
@@ -225,20 +231,23 @@ img {
 #buy__store {
   display: flex;
   max-width: 1200px;
+  height: auto;
   margin-top: 20px;
+  gap: 10px;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #buy .buy__box {
   box-shadow: 10px 5px 10px black;
   margin: 15px;
   width: 250px;
-  height: 230px;
+  height: auto;
+  padding: 10px;
   border-radius: 15px;
   background-color: #293249;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -248,7 +257,7 @@ img {
   height: 150px;
 }
 
-#footer{
+#footer {
   display: flex;
   background-color: #101524;
   justify-content: center;
@@ -256,7 +265,7 @@ img {
   width: auto;
 }
 
-.footer__content{
+.footer__content {
   max-width: 1200px;
   height: 180px;
   display: flex;
@@ -265,22 +274,50 @@ img {
   gap: 120px;
 }
 
-.footer__content p{
+.footer__content p {
   color: aliceblue;
   font-weight: 500;
   font-size: 1.4rem;
 }
 
-.footer__content a{
+.footer__content a {
   color: aliceblue;
 }
 
-.social__medias img{
+.social__medias img {
   width: 40px;
-  margin-right:10px ;
+  margin-right: 10px;
   color: aliceblue;
 }
 
-.oficial__site a{
+.oficial__site a {
   color: #bcfbfd;
+}
+
+/* @media (max-width: 1200px) {
+  #title .char_game {
+    width: 60%;
+    height: 500px;
+  }
+  
+} */
+
+@media (max-width: 950px) {
+  #title .title__content {
+    flex-direction: column;
+    margin-top: 150px;
+    width: auto;
+  }
+
+  #title .name_game {
+    width: 80vw;
+
+  }
+  
+  #title .char_game {
+    width: 30%;
+    height: 50%;
+  }
+
+
 }
