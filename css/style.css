@@ -10,12 +10,15 @@
   text-decoration: none;
   list-style: none;
   font-family: Berylium;
-
 }
-
 
 h1 {
   font-size: 4rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 img {
@@ -27,7 +30,7 @@ img {
 }
 
 #menu {
-  width: 100%;
+  width: 100vw;
   background-color: #201a2e;
   opacity: 0.98;
   display: flex;
@@ -63,7 +66,13 @@ img {
   font-size: 1.3rem;
   font-family: Berylium;
   font-weight: 600;
-}
+} 
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
 
 #title {
   width: 100%;
@@ -85,7 +94,6 @@ img {
 
 #title .name_game {
   width: 60vw;
-
 }
 
 #title .char_game {
@@ -95,7 +103,8 @@ img {
 
 #about {
   width: 100%;
-  height: 800px;
+  min-height: 800px;
+  width: auto;
   background-color: #101524;
   color: white;
   padding: 30px;
@@ -112,7 +121,6 @@ img {
 }
 
 #about .primary__text h1 {
-  font-size: 4rem;
   text-align: center;
   margin-bottom: 20px;
   color: #bcfbfd;
@@ -186,7 +194,7 @@ img {
 .dlcs__itens {
   box-shadow: 10px 5px 10px black;
   border-radius: 8px;
-  width: auto;
+  width: 90%;
   max-width: 500px;
   height: auto;
   max-height: 600px;
@@ -196,7 +204,6 @@ img {
 
 .dlcs__itens p {
   font-weight: 600;
-  font-size: 1.4rem;
   text-align: justify;
   color: aliceblue;
   padding: 10px;
@@ -220,14 +227,6 @@ img {
   align-items: center;
 }
 
-#buy h1 {
-  font-size: 4rem;
-}
-
-#buy p {
-  font-size: 1.8rem;
-}
-
 #buy__store {
   display: flex;
   max-width: 1200px;
@@ -235,7 +234,7 @@ img {
   margin-top: 20px;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -262,14 +261,14 @@ img {
   background-color: #101524;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100%;
 }
 
 .footer__content {
   max-width: 1200px;
   height: 180px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 120px;
 }
@@ -278,29 +277,16 @@ img {
   color: aliceblue;
   font-weight: 500;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .footer__content a {
   color: aliceblue;
 }
 
-.social__medias img {
-  width: 40px;
-  margin-right: 10px;
-  color: aliceblue;
-}
-
 .oficial__site a {
   color: #bcfbfd;
 }
-
-/* @media (max-width: 1200px) {
-  #title .char_game {
-    width: 60%;
-    height: 500px;
-  }
-  
-} */
 
 @media (max-width: 950px) {
   #title .title__content {
@@ -311,13 +297,53 @@ img {
 
   #title .name_game {
     width: 80vw;
-
   }
-  
+
   #title .char_game {
-    width: 30%;
+    width: 35%;
     height: 50%;
   }
 
+}
 
+@media (max-width: 862px) {
+  .footer__content .logo {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  #about .another__infos {
+    flex-direction: column;
+  }
+
+  #dlc h1 {
+    font-size: 2.7rem;
+    width: 300px;
+  }
+
+  #buy p {
+    text-align: center;
+  }
+  #title .char_game {
+    min-width: 60%;
+    max-width: 80%;
+  }
+
+}
+
+@media (max-width: 420px) {
+  #title .char_game {
+    min-width: 60%;
+    max-width: 80%;
+  }
 }
