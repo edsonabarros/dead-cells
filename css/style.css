@@ -46,8 +46,7 @@ img {
   align-items: center;
   align-content: center;
   margin: 10px;
-  max-width: 1200px;
-  gap: 400px;
+  width: 1200px;
 }
 
 #menu img {
@@ -72,11 +71,10 @@ img {
   color: #bcfbfd;
 }
 
-.menu-btn{
+.menu-btn {
   display: none;
   color: #bcfbfd;
 }
-
 
 #title {
   width: 100%;
@@ -90,7 +88,7 @@ img {
 
 #title .title__content {
   display: flex;
-  align-content: center;
+/*   align-content: center; */
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
@@ -102,7 +100,7 @@ img {
 
 #title .char_game {
   width: 40vw;
-  height: 600px;
+  height: 40%;
 }
 
 #about {
@@ -269,12 +267,11 @@ img {
 }
 
 .footer__content {
-  max-width: 1200px;
+  width: 1200px;
   height: 180px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 120px;
 }
 
 .footer__content p {
@@ -293,48 +290,44 @@ img {
 }
 
 @media (max-width: 950px) {
-
-  .menu-btn{
+  .menu-btn {
     display: block;
   }
 
-  nav{
+  nav {
     position: fixed;
     top: 65px;
-    left: -100%;
+    left: -200%;
     height: 23vh;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     transition: all 0.2s ease;
     background-color: #201a2e;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
   }
 
-  nav.open{
+  nav.open {
     left: 0;
   }
 
-  #menu nav ul{
+  #menu nav ul {
     display: flex;
     flex-direction: column;
     width: 100vw;
-
   }
 
-  nav ul li{
-    padding:  5px;
+  nav ul li {
+    padding: 5px;
     width: 100vw;
     border-bottom: 1px solid #bcfbfd;
   }
 
-  #primeiro{
+  #primeiro {
     border-top: 1px solid #bcfbfd;
   }
-
-
 
   #title .title__content {
     flex-direction: column;
@@ -343,12 +336,12 @@ img {
   }
 
   #title .name_game {
-    width: 80vw;
+    width: 60vw;
   }
 
-  #title .char_game {
-    width: 35%;
-    height: 50%;
+  #title {
+
+    height: 100%;
   }
 }
 
@@ -358,15 +351,9 @@ img {
   }
 }
 
-
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
-  }
-
-  #nav {
-
-    gap: 250px;
   }
 
   p {
@@ -385,19 +372,15 @@ img {
   #buy p {
     text-align: center;
   }
-  #title .char_game {
+/*   #title .char_game {
     min-width: 60%;
     max-width: 80%;
-  }
+  } */
 }
 
 @media (max-width: 420px) {
-  #title .char_game {
+/*   #title .char_game {
     min-width: 60%;
     max-width: 80%;
-  }
-
-  #nav {
-    gap: 100px;
-  }
+  } */
 }
